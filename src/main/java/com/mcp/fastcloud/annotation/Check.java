@@ -1,4 +1,4 @@
-package com.mcp.validate.annotation;
+package com.mcp.fastcloud.annotation;
 
 
 import com.mcp.validate.BaseValidator;

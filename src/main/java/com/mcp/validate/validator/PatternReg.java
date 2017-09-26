@@ -1,7 +1,7 @@
 package com.mcp.validate.validator;
 
 import com.mcp.validate.BindingValidator;
-import com.mcp.validate.annotation.Check;
+import com.mcp.fastcloud.annotation.Check;
 import org.springframework.util.StringUtils;
 
 import java.util.regex.Matcher;
