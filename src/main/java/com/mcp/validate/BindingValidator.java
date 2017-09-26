@@ -1,7 +1,7 @@
 package com.mcp.validate;
 
 
-import com.mcp.fastcloud.annotation.Check;
+import com.mcp.validate.annotation.Check;
 import com.mcp.validate.exception.ValidateException;
 
 /**

@@ -1,8 +1,5 @@
-package com.mcp.fastcloud.annotation;
+package com.mcp.validate.annotation;
 
-
-import com.mcp.validate.BaseValidator;
-import com.mcp.validate.constant.Valid;
 
 import java.lang.annotation.*;
 

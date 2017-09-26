@@ -3,7 +3,7 @@ package com.mcp.validate.resolver;
 import com.mcp.validate.BaseValidator;
 import com.mcp.validate.BindResult;
 import com.mcp.validate.ValidatorCache;
-import com.mcp.fastcloud.annotation.Check;
+import com.mcp.validate.annotation.Check;
 import com.mcp.validate.exception.ValidateException;
 import org.springframework.beans.ConversionNotSupportedException;
 import org.springframework.beans.TypeMismatchException;

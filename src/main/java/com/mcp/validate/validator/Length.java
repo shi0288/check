@@ -1,7 +1,7 @@
 package com.mcp.validate.validator;
 
 import com.mcp.validate.BindingValidator;
-import com.mcp.fastcloud.annotation.Check;
+import com.mcp.validate.annotation.Check;
 
 /**
  * Created by shiqm on 2017-08-21.
