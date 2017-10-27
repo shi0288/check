@@ -9,8 +9,6 @@
     <groupId>com.mcp</groupId>
     <version>1.0</version>
 
-
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.version>1.4.3.RELEASE</spring.version>
@@ -43,14 +41,5 @@
         </dependency>
 
     </dependencies>
-
-
-    <repositories>
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-    </repositories>
-
 
 </project>

@@ -10,6 +10,7 @@ public class ValidateException extends RuntimeException {
     private BindResult bindResult;
 
     public ValidateException(BindResult bindResult) {
+        super(bindResult.getMessage());
         this.bindResult = bindResult;
     }
 
