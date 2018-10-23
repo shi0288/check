@@ -96,6 +96,17 @@ public class CheckMethodArgumentResolver implements HandlerMethodArgumentResolve
                 }
             }
             Check check = methodParameter.getParameterAnnotation(Check.class);
+            if (check.required() && (arg == null || "".equals(arg))) {
+                String message;
+                if (check.name().equals("")) {
+                    message = namedValueInfo.name;
+                } else {
+                    message = check.name();
+                }
+                message += "不能为空";
+                BindResult bindResult = new BindResult(namedValueInfo.name, message);
+                throw new ValidateException(bindResult);
+            }
             if (check.valid().length >= 0) {
                 for (int i = 0; i < check.valid().length; i++) {
                     Class clazz = check.valid()[i];

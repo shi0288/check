@@ -50,7 +50,9 @@ public @interface Check {
 
     boolean letter() default false;
 
-    int length() default 0;
+    int lengthMin() default 0;
+
+    int lengthMax() default 0;
 
     Class[] valid() default {};
 

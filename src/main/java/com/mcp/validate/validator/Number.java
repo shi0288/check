@@ -17,7 +17,7 @@ public class Number extends BindingValidator {
     public boolean business(Check check, String fieldName, Object value) {
         if (check.number()) {
             Pattern pattern = Pattern.compile(regex);
-            Matcher matcher = pattern.matcher(String.valueOf(value));
+            Matcher matcher = pattern.matcher(String.valueOf(value).replace(".",""));
             this.msg = "#name#必须为数字" ;
             return matcher.matches();
         }
