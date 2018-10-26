@@ -153,7 +153,13 @@ public class CheckMethodArgumentResolver implements HandlerMethodArgumentResolve
     }
 
     protected void handleMissingValue(String name, MethodParameter parameter, NativeWebRequest request) throws Exception {
-        BindResult bindResult = new BindResult(name, "缺少参数:" + name);
+
+        Check check = (Check) parameter.getParameterAnnotation(Check.class);
+        if (check.name().equals("")) {
+        } else {
+            name = check.name();
+        }
+        BindResult bindResult = new BindResult(name, name + "不能为空");
         throw new ValidateException(bindResult);
     }
 
