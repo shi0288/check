@@ -16,8 +16,8 @@ public class Min extends BindingValidator {
         if (StringUtils.isEmpty(check.min())) {
             return true;
         }
-        BigDecimal cond = BigDecimal.valueOf(Long.valueOf(check.min()));
-        BigDecimal param = BigDecimal.valueOf(Long.valueOf(value.toString()));
+        BigDecimal cond = BigDecimal.valueOf(Double.valueOf(check.min()));
+        BigDecimal param = BigDecimal.valueOf(Double.valueOf(value.toString()));
         if (param.compareTo(cond) >= 0) {
             return true;
         }
