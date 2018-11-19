@@ -21,7 +21,7 @@ public class Max extends BindingValidator {
         if (param.compareTo(cond) <= 0) {
             return true;
         }
-        this.msg = "#name#不能大于" + cond;
+        this.msg = "#name#不能大于" + check.max();
         return false;
     }
 

@@ -21,7 +21,7 @@ public class Min extends BindingValidator {
         if (param.compareTo(cond) >= 0) {
             return true;
         }
-        this.msg = "#name#不能小于" + cond;
+        this.msg = "#name#不能小于" + check.min();
         return false;
     }
 
