@@ -1,16 +1,16 @@
 # check
 
 添加jitpack仓库地址(或是你有自己的私仓，把jar包传上去也可以):
-<pre>
+
 ```xml
 <repository>
         <id>jitpack.io</id>
         <url>https://jitpack.io</url>
 </repository>
 ```
-</pre>
+
 引入jar包:
-<pre>
+
 ```xml
 <!-- support Check-->
  <dependency>
@@ -19,7 +19,7 @@
        <version>1.41</version>
 </dependency>
 ```
-</pre>
+
 
 使用样例:
 
