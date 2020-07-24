@@ -1,5 +1,19 @@
 # check
+
+添加jitpack仓库地址(或是你有自己的私仓，把jar包传上去也可以):
+<repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+</repository>
+
 引入jar包:
+<!-- support Check-->
+ <dependency>
+       <groupId>com.github.shi0288</groupId>
+       <artifactId>check</artifactId>
+       <version>1.41</version>
+</dependency>
+
 
 使用样例:
 
